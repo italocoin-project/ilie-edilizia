@@ -14,11 +14,11 @@ menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () =>
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // Inserire qui il numero WhatsApp reale in formato internazionale, senza + o spazi.
-const WHATSAPP_NUMBER = '390000000000';
+const WHATSAPP_NUMBER = '393289625891';
 const form = document.getElementById('contactForm');
 form?.addEventListener('submit', event => {
   event.preventDefault();
-  if (WHATSAPP_NUMBER === '390000000000') {
+  if (!WHATSAPP_NUMBER) {
     alert('Il modulo è pronto. Per attivare l’invio, configura il numero WhatsApp reale nel file script.js.');
     return;
   }
